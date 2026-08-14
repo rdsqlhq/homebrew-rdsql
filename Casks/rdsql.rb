@@ -20,8 +20,8 @@ cask "rdsql" do
   postflight do
     # macOS builds aren't code-signed yet (see rdsql-desktop RELEASE.md), so
     # Gatekeeper quarantines the app and refuses to launch it after a plain
-    # `cp`/DMG install. Homebrew installs bypass the manual `xattr -cr`
-    # workaround by clearing the quarantine flag here automatically.
+    # DMG install. Homebrew installs bypass the manual "xattr -cr" workaround
+    # by clearing the quarantine flag here automatically.
     system_command "/usr/bin/xattr",
                     args: ["-cr", "#{appdir}/rdSQL.app"],
                     sudo: false
