@@ -1,9 +1,9 @@
 cask "rdsql" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.1.0"
-  sha256 arm:   "f60be1c08d4f34637966ac51098dbc738632f19a75dd2d4eaecc4d013ea6e14b",
-         intel: "ce919b43c36013b6bf9e818d9fdeff710b6f983271dc8ffa736ffa3018e97621"
+  version "1.1.3"
+  sha256 arm:   "c66931f2a5bc54c0f66e5d25aa9a8228aeb030238a8d2ae0aefb4e60f93730a0",
+         intel: "6167d8144c0145b264d74807f5497894b83e42f0973571f22d91d193ef4d42af"
 
   url "https://rdsql.com/download/rdSQL_#{version}_#{arch}.dmg"
   name "rdSQL Desktop"
